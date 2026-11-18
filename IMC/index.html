@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <div class="calculadora">
+            <h1>Calculadora de IMC</h1>
+
+            <p class="descricao">
+                Descubra seu Índice de Massa Corporal
+            </p>
+
+            <form action="IMC.php" method="POST">
+
+                <div class="campo">
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" id="peso"
+                        name="peso" step="0.01"
+                        placeholder="Ex: 70" required>
+                </div>
+
+                <div class="campo">
+                    <label for="altura">Altura (m)</label>
+                    <input type="number" id="altura"
+                        name="altura" step="0.01"
+                        placeholder="Ex: 1.75" required>
+                </div>
+
+                <button type="submit">Calcular IMC</button>
+
+            </form>
+
+            
+
+            <div class="classificacao">
+                <h3>Classificação do IMC</h3>
+
+                <p>Abaixo de 18,5 - Abaixo do peso</p>
+                <p>18,5 a 24,9 - Peso normal</p>
+                <p>25 a 29,9 - Sobrepeso</p>
+                <p>30 ou mais - Obesidade</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
